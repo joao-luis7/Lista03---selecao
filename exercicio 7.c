@@ -9,7 +9,7 @@ int main(){
     setlocale(LC_ALL, "Portuguese");
     float num1, num2, num3, soma = 0;
 
-    printf("Digite três valores (diferentes), com espaçamento: ");
+    printf("Digite trÃªs valores (diferentes), com espaÃ§amento: ");
     scanf("%f %f %f", &num1, &num2, &num3);
     if (num1 < num2 && num2 < num3){
         soma = num2+num3;
@@ -21,7 +21,7 @@ int main(){
         soma = num1+num2;
     }
 
-    printf("A soma dos dois maiores é: %.2f\n", soma);
+    printf("A soma dos dois maiores Ã©: %.2f\n", soma);
     
     system("pause");
     return 0;
