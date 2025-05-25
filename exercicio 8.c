@@ -8,25 +8,25 @@ int main(){
     float litros;
     char combustivel;
 
-    printf("\nDigite com a letra correspondente:\n A - ¡lcool ou G - Gasolina. \n");
+    printf("\nDigite com a letra correspondente:\n A - √Ålcool ou G - Gasolina. \n");
     scanf("%c", &combustivel);
-    printf("VocÍ abasteceu quantos litros? ");
+    printf("Voc√™ abasteceu quantos litros? ");
     scanf("%f", &litros);
 
-    if (combustivel == 'A'){
+    if (combustivel == 'A' || combustivel == 'a'){
         if (litros <= 20){
-            printf("VocÍ tem desconto no ¡lcool! Ficou: R$%.2f\n", (litros*2.90)*0.97);
+            printf("Voc√™ tem desconto no √Ålcool! Ficou: R$%.2f\n", (litros*2.90)*0.97);
         }
         else{
-            printf("VocÍ tem desconto no ¡lcool! Ficou: R$%.2f\n", (litros*2.90)*0.95);
+            printf("Voc√™ tem desconto no √Ålcool! Ficou: R$%.2f\n", (litros*2.90)*0.95);
         }
     }
     else{
         if (litros <= 20){
-            printf("VocÍ tem desconto na Gasolina! Ficou: R$%.2f\n", (litros*3.30)*0.96);
+            printf("Voc√™ tem desconto na Gasolina! Ficou: R$%.2f\n", (litros*3.30)*0.96);
         }
         else{
-            printf("VocÍ tem desconto na Gasolina! Ficou: R$%.2f\n", (litros*3.30)*0.94);
+            printf("Voc√™ tem desconto na Gasolina! Ficou: R$%.2f\n", (litros*3.30)*0.94);
         }
         
     }
