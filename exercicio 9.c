@@ -18,12 +18,15 @@ int main(){
 
     if (sexo == 'M' || sexo == 'm'){
         ideal = (72.7*altura)-58;
-        printf("Seu peso ideal M È de: %.2f kg\n", ideal);
+        printf("Seu peso ideal M e de: %.2f kg\n", ideal);
 
     }
-    else{
+    else if (sexo == 'F' || sexo == 'f'){
         ideal = (62.1*altura)-44.7;
-        printf("Seu peso ideal F È de: %.2f kg\n", ideal);
+        printf("Seu peso ideal F e de: %.2f kg\n", ideal);
+    }
+    else{
+        printf("Sexo inv√°lido. Tente novamente.");
     }
 
     system("pause");
